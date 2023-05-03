@@ -347,6 +347,20 @@ function Install-WingetAutoUpdate {
         New-ItemProperty $regPath -Name WAU_PostUpdateActions -Value 0 -PropertyType DWord -Force | Out-Null
         New-ItemProperty $regPath -Name WAU_MaxLogFiles -Value $MaxLogFiles -PropertyType DWord -Force | Out-Null
         New-ItemProperty $regPath -Name WAU_MaxLogSize -Value $MaxLogSize -PropertyType DWord -Force | Out-Null
+        New-ItemProperty $regPath -Name WAU_UpdatesAtTime -Value $UpdatesAtTime -Force | Out-Null
+        New-ItemProperty $regPath -Name WAU_UpdatesInterval -Value $UpdatesInterval -Force | Out-Null
+        if ($InstallUserContext) {
+            New-ItemProperty $regPath -Name WAU_UserContext -Value 1 -Force | Out-Null
+        }
+        if ($DesktopShortcut) {
+            New-ItemProperty $regPath -Name WAU_DesktopShortcut -Value 1 -Force | Out-Null
+        }
+        if ($StartMenuShortcut) {
+            New-ItemProperty $regPath -Name WAU_StartMenuShortcut -Value 1 -Force | Out-Null
+        }
+        if ($InstallUserContext) {
+            New-ItemProperty $regPath -Name WAU_UserContext -Value 1 -Force | Out-Null
+        }
         if ($DisableWAUAutoUpdate) {
             New-ItemProperty $regPath -Name WAU_DisableAutoUpdate -Value 1 -Force | Out-Null
         }
