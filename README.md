@@ -1,4 +1,10 @@
 # Winget-AutoUpdate (WAU)
+
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Romanitho/Winget-AutoUpdate?label=Latest%20Stable%20Release&style=flat-square)
+![GitHub release (by tag)](https://img.shields.io/github/downloads/Romanitho/Winget-AutoUpdate/latest/total?label=Downloads&style=flat-square) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+![GitHub release (release name instead of tag name)](https://img.shields.io/github/v/release/Romanitho/Winget-AutoUpdate?display_name=release&include_prereleases&label=Latest%20Release&style=flat-square)
+![GitHub release (latest by SemVer including pre-releases)](https://img.shields.io/github/downloads-pre/Romanitho/Winget-AutoUpdate/latest/total?label=Downloads&style=flat-square)
+
 This project uses the Winget tool to daily update apps (with system context) and notify users when updates are available and installed.
 
 ![image](https://user-images.githubusercontent.com/96626929/150645599-9460def4-0818-4fe9-819c-dd7081ff8447.png)
