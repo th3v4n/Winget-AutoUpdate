@@ -2,7 +2,8 @@
 
 # Winget-AutoUpdate (WAU)
 
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Romanitho/Winget-AutoUpdate?label=Latest%20Stable%20Release&style=flat-square) ![GitHub release (by tag)](https://img.shields.io/github/downloads/Romanitho/Winget-AutoUpdate/latest/total?label=Downloads&style=flat-square)](https://github.com/Romanitho/Winget-AutoUpdate/releases/latest)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Romanitho/Winget-AutoUpdate?label=Latest%20Stable%20Release&style=flat-square)](https://github.com/Romanitho/Winget-AutoUpdate/releases/latest)
+[![GitHub release (by tag)](https://img.shields.io/github/downloads/Romanitho/Winget-AutoUpdate/latest/total?label=Downloads&style=flat-square)](https://github.com/Romanitho/Winget-AutoUpdate/releases/latest)
 
 </div>
 
@@ -219,9 +220,10 @@ Feel free to give us any suggestions or optimizations in code and support us by 
 ---
 <div align="center">
 
-### Winget-AutoUpdate - GitHub
+#### WAU - GitHub
 
-[![GitHub release (release name instead of tag name)](https://img.shields.io/github/v/release/Romanitho/Winget-AutoUpdate?display_name=release&include_prereleases&label=Latest%20Release&style=flat-square) ![GitHub release (latest by SemVer including pre-releases)](https://img.shields.io/github/downloads-pre/Romanitho/Winget-AutoUpdate/latest/total?label=Downloads&style=flat-square)](https://github.com/Romanitho/Winget-AutoUpdate/releases/)<br>
+[![GitHub release (release name instead of tag name)](https://img.shields.io/github/v/release/Romanitho/Winget-AutoUpdate?display_name=release&include_prereleases&label=Latest%20Release&style=flat-square)](https://github.com/Romanitho/Winget-AutoUpdate/releases/)
+[![GitHub release (latest by SemVer including pre-releases)](https://img.shields.io/github/downloads-pre/Romanitho/Winget-AutoUpdate/latest/total?label=Downloads&style=flat-square)](https://github.com/Romanitho/Winget-AutoUpdate/releases/)<br>
 [![GitHub all releases](https://img.shields.io/github/downloads/Romanitho/Winget-AutoUpdate/total?label=Total%20downloads&style=flat-square)](https://tooomm.github.io/github-release-stats/?username=Romanitho&repository=Winget-AutoUpdate)
 
 </div>
