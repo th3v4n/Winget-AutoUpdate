@@ -2,61 +2,61 @@
 	<outputs>
 		<output id="0">
 			<!--Check network connection-->
-			<title>Prüfen Sie Ihre Internet Verbindung.</title>
+			<title>检查网络连接。</title>
 			<!--Unable to check for software updates at this time!-->
-			<message>Es konnte nicht nach Updates gesucht werden!</message>
+			<message>当前无法检查软件更新！</message>
 		</output>
 		<output id="1">
-			<!--No internet connction-->
-			<title>Keine Internet Verbindung!</title>
+			<!--No internet connection-->
+			<title>没有网络连接。</title>
 			<!--Updates could not be verified-->
-			<message>Updates konnten nicht verifiziert werden.</message>
+			<message>无法验证更新。</message>
 		</output>
 		<output id="2">
 			<!--{App} will be updated-->
-			<title>{0} wird aktualisiert!</title>
+			<title>{0} 将会更新！</title>
 			<!--{v1.0} to {v2.0}-->
-			<message>Von {0} auf {1}</message>
+			<message>{0} 至 {1}</message>
 		</output>
 		<output id="3">
 			<!--{App} updated-->
-			<title>{0} wurde aktualisiert.</title>
+			<title>{0} 已更新。</title>
 			<!--Installed version: {v1.0}-->
-			<message>Installierte Version: {0}</message>
+			<message>已安装版本： {0}</message>
 		</output>
 		<output id="4">
 			<!--{App} could not be updated-->
-			<title>{0} konnte nicht aktualisiert werden!</title>
+			<title>{0} 无法更新！</title>
 			<!--Please contact support-->
-			<message>Bitte wenden sie sich an den Support.</message>
+			<message>请联系支持。</message>
 		</output>
 		<output id="5">
 			<!--Logs are not available yet-->
-			<message>Die Logs sind aktuell nicht verfügbar!</message>
+			<message>日志尚未可用！</message>
 		</output>
 		<output id="6">
 			<!--Starting a manual check for updated apps-->
-			<message>Starte die manuelle Suche nach Updates.</message>
+			<message>开始手动检查软件更新...</message>
 		</output>
 		<output id="7">
 			<!--Couldn't start a manual check for updated apps-->
-			<message>Die manuelle Suche nach Updates konnte nicht gestartet werden!</message>
+			<message>无法手动检查软件更新！</message>
 		</output>
 		<output id="8">
 			<!--Check for updated apps already running-->
-			<message>Die Such nach Updates läuft bereits.</message>
+			<message>软件更新检查正在运行...</message>
 		</output>
 		<output id="9">
 			<!--Manual check for updated apps completed-->
-			<message>Die manuelle suche nach Updates wurde abgeschlossen.</message>
+			<message>已完成手动检查软件更新...</message>
 		</output>
 		<output id="10">
 			<!--See changelog-->
-			<message>See changelog</message>
+			<message>查看更新日志</message>
 		</output>
 		<output id="11">
 			<!--Open log file-->
-			<message>Open log file</message>
+			<message>打开日志文件</message>
 		</output>
 	</outputs>
 </local>

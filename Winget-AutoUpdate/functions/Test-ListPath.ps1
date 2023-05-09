@@ -1,4 +1,4 @@
-#Function to check Black/White List External Path
+#Function to check Block/Allow List External Path
 
 function Test-ListPath ($ListPath, $UseWhiteList, $WingetUpdatePath) {
     # URL, UNC or Local Path
@@ -30,29 +30,54 @@ function Test-ListPath ($ListPath, $UseWhiteList, $WingetUpdatePath) {
                     $wc.DownloadFile($ExternalList, $LocalList)
                 }
                 catch {
+                    $Script:ReachNoPath = $True
                     return $False
                 }
                 return $true
             }
         }
         catch {
-            return $False
+            try {
+                $content = $wc.DownloadString("$ExternalList")
+                if ($null -ne $content -and $content -match "\w\.\w") {
+                    $wc.DownloadFile($ExternalList, $LocalList)
+                    return $true
+                }
+                else {
+                    $Script:ReachNoPath = $True
+                    return $False
+                }
+            }
+            catch {
+                $Script:ReachNoPath = $True
+                return $False
+            }
         }
     }
     # If path is UNC or local
     else {
-        if (Test-Path -Path $ExternalList -PathType leaf) {
-            $dateExternal = (Get-Item "$ExternalList").LastWriteTime.ToString("yyyy-MM-dd HH:mm:ss")
+        if (Test-Path -Path $ExternalList) {
+            try {
+                $dateExternal = (Get-Item "$ExternalList").LastWriteTime.ToString("yyyy-MM-dd HH:mm:ss")
+            }
+            catch {
+                $Script:ReachNoPath = $True
+                return $False
+            }
             if ($dateExternal -gt $dateLocal) {
                 try {
                     Copy-Item $ExternalList -Destination $LocalList -Force
                 }
                 catch {
+                    $Script:ReachNoPath = $True
                     return $False
                 }
-                return $true
+                return $True
             }
         }
+        else {
+            $Script:ReachNoPath = $True
+        }
+        return $False
     }
-    return $false
 }
