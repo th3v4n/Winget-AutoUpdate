@@ -9,3 +9,4 @@ Mozilla.Firefox.DeveloperEdition
 Mozilla.Firefox.ESR
 TeamViewer.TeamViewer
 TeamViewer.TeamViewer.Host
+Mega.MEGASync
